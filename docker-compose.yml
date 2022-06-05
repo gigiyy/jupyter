@@ -1,0 +1,7 @@
+nodeapp:
+  image: jupyter/scipy-notebook:2021-11-20
+  container_name: "jupyter"
+  ports:
+   - "10000:8888"
+  volumes:
+   - "$PWD:/home/jovyan/work"
